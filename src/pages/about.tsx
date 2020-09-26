@@ -1,6 +1,5 @@
 import React from "react"
 import { navigate } from "gatsby"
-import Header from "../components/Header"
 import Layout from "../components/Layout"
 
 export default function About() {
