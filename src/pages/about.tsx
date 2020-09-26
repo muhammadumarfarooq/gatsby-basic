@@ -1,17 +1,17 @@
 import React from "react"
 import { navigate } from "gatsby"
 import Header from "../components/Header"
+import Layout from "../components/Layout"
 
 export default function About() {
   return (
-    <div>
-      <Header title="About page"/>
+    <Layout headerTitle="About Page">
       <p>About page</p>
       <button onClick={() => {
         navigate("/")
       }}>
         GO back to the main page
       </button>
-    </div>
+    </Layout>
   )
 }
