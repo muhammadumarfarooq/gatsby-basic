@@ -17,3 +17,12 @@ exports.createPages = async function({ actions }) {
     }
   })
 }
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  if ( page.path.match(/^\/contactUs/) ) {
+    page.matchPath = "/contactUs/*"
+    
+    createPage(page)
+  }
+}
